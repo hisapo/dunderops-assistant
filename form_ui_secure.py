@@ -1,8 +1,3 @@
-"""
-DunderOps Assistant com proteção contra prompt injection
-Versão segura com validação e sanitização de entrada
-"""
-
 import json
 import os
 import logging
@@ -16,6 +11,9 @@ from abstra.forms import TextareaInput, MarkdownOutput, run
 from src.core.prompt_config import PromptConfig
 from src.security.secure_function_validator import SecureFunctionValidator
 from src.core.function_intent import detect_function_intent
+
+# DunderOps Assistant com proteção contra prompt injection
+# Versão segura com validação e sanitização de entrada
 
 # Configurar logging
 logging.basicConfig(

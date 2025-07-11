@@ -1,8 +1,3 @@
-"""
-DunderOps Assistant com Chain of Verification
-Versão melhorada que usa auto-crítica para aumentar assertividade das respostas
-"""
-
 import json
 import os
 from openai import OpenAI
@@ -17,6 +12,10 @@ from src.core.function_intent import detect_function_intent
 from src.core.function_validator import FunctionValidator
 from src.cov.chain_of_verification import ChainOfVerification, CoVConfiguration
 from src.core.metrics_tracker import MetricsTracker
+
+# DunderOps Assistant com Chain of Verification
+# Versão melhorada que usa auto-crítica para aumentar assertividade das respostas
+
 
 print("🚀 Iniciando DunderOps Assistant com Chain of Verification...")
 

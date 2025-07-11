@@ -1,4 +1,4 @@
-ab"""
+"""
 Implementação do Chain of Verification (CoV) para aumentar assertividade das respostas da IA
 """
 
