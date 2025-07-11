@@ -1,0 +1,112 @@
+{
+  "workspace": {
+    "name": "Workspace",
+    "language": "pt",
+    "theme": null,
+    "logo_url": "./logo.png",
+    "favicon_url": "./favicon.ico",
+    "brand_name": "Dunder Mifflin - AI Demo",
+    "main_color": "#15384E",
+    "font_family": "Open Sans",
+    "font_color": null
+  },
+  "home": {
+    "access_control": {
+      "is_public": false,
+      "required_roles": []
+    }
+  },
+  "jobs": [],
+  "hooks": [],
+  "forms": [
+    {
+      "title": "DunderOps Assistant",
+      "file": "form_ui.py",
+      "id": "6e56cc8f-3847-41c3-8f7f-9f7baf9c0e11",
+      "transitions": [],
+      "workflow_position": [
+        345.0,
+        285.0
+      ],
+      "end_message": "\ud83d\udc4b",
+      "start_button_text": null,
+      "is_initial": true,
+      "welcome_title": "DunderOps Assistant",
+      "access_control": {
+        "is_public": false,
+        "required_roles": []
+      },
+      "restart_button_text": "Recome\u00e7ar",
+      "start_message": null,
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      },
+      "error_message": null,
+      "allow_restart": true,
+      "path": "assistant",
+      "timeout_message": null,
+      "auto_start": false
+    },
+    {
+      "title": "DunderOps Assistant (CoVe)",
+      "file": "form_ui_cov.py",
+      "id": "f764e358-39b1-487f-9a74-9e3c414f58c4",
+      "transitions": [],
+      "workflow_position": [
+        315.0,
+        375.0
+      ],
+      "end_message": "\ud83d\udc4b",
+      "start_button_text": null,
+      "is_initial": true,
+      "welcome_title": "DunderOps Assistant (CoVe)",
+      "access_control": {
+        "is_public": false,
+        "required_roles": []
+      },
+      "restart_button_text": null,
+      "start_message": null,
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      },
+      "error_message": null,
+      "allow_restart": true,
+      "path": "assistant-cove",
+      "timeout_message": null,
+      "auto_start": false
+    },
+    {
+      "title": "Dunder Ops Assistant (Protected)",
+      "file": "form_ui_secure.py",
+      "id": "fc265661-3fea-4263-97f2-5b209e760400",
+      "transitions": [],
+      "workflow_position": [
+        315.0,
+        465.0
+      ],
+      "end_message": "\ud83d\udc4b",
+      "start_button_text": null,
+      "is_initial": true,
+      "welcome_title": "Dunder Ops Assistant (Protected)",
+      "access_control": {
+        "is_public": false,
+        "required_roles": []
+      },
+      "restart_button_text": null,
+      "start_message": null,
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      },
+      "error_message": null,
+      "allow_restart": true,
+      "path": "assistant-protected",
+      "timeout_message": null,
+      "auto_start": false
+    }
+  ],
+  "scripts": [],
+  "version": "14.0"
+}

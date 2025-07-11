@@ -1,0 +1,3169 @@
+{
+  "original": {
+    "complete_params": [
+      {
+        "test_id": "complete_meeting_01",
+        "success": true,
+        "quality_score": 5,
+        "execution_time_ms": 2069.2362785339355,
+        "tokens_used": 832,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_meeting_02",
+        "success": true,
+        "quality_score": 5,
+        "execution_time_ms": 2432.1610927581787,
+        "tokens_used": 842,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_quote_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2554.002285003662,
+        "tokens_used": 848,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_quote_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2768.9080238342285,
+        "tokens_used": 841,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4196.470022201538,
+        "tokens_used": 980,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3995.1822757720947,
+        "tokens_used": 977,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_meeting_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2354.6299934387207,
+        "tokens_used": 861,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_meeting_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2355.579137802124,
+        "tokens_used": 857,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_quote_03",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 1328.627109527588,
+        "tokens_used": 691,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_04",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 1435.3630542755127,
+        "tokens_used": 709,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_05",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2562.6959800720215,
+        "tokens_used": 847,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4256.335973739624,
+        "tokens_used": 1035,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4075.4401683807373,
+        "tokens_used": 1046,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5058.174133300781,
+        "tokens_used": 1058,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      }
+    ],
+    "incomplete_params": [
+      {
+        "test_id": "incomplete_meeting_01",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1275.6481170654297,
+        "tokens_used": 670,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_02",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1925.7397651672363,
+        "tokens_used": 824,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ⚠️ Falta humor esperado",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "incomplete_quote_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1375.8158683776855,
+        "tokens_used": 694,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1031.2881469726562,
+        "tokens_used": 687,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1361.4311218261719,
+        "tokens_used": 703,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_02",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1505.932092666626,
+        "tokens_used": 703,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1148.1738090515137,
+        "tokens_used": 676,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1480.510950088501,
+        "tokens_used": 680,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1048.137903213501,
+        "tokens_used": 686,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1074.2442607879639,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1273.7147808074951,
+        "tokens_used": 700,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1100.1832485198975,
+        "tokens_used": 688,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2017.9378986358643,
+        "tokens_used": 733,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_04",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1579.12015914917,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1704.8780918121338,
+        "tokens_used": 702,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "direct_responses": [
+      {
+        "test_id": "trivia_01",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 2159.6782207489014,
+        "tokens_used": 771,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_02",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1837.5217914581299,
+        "tokens_used": 730,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_03",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2148.5748291015625,
+        "tokens_used": 771,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_04",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 2433.9241981506348,
+        "tokens_used": 765,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_05",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 3419.2562103271484,
+        "tokens_used": 886,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2077.0132541656494,
+        "tokens_used": 775,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_07",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2981.123924255371,
+        "tokens_used": 846,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_08",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2455.1541805267334,
+        "tokens_used": 784,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_09",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 2022.9220390319824,
+        "tokens_used": 757,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "policy_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2168.388843536377,
+        "tokens_used": 770,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "policy_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3908.00404548645,
+        "tokens_used": 790,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_01",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 3161.5381240844727,
+        "tokens_used": 798,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2656.0888290405273,
+        "tokens_used": 749,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_03",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 2310.075044631958,
+        "tokens_used": 742,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "edge_cases": [
+      {
+        "test_id": "edge_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1639.13893699646,
+        "tokens_used": 681,
+        "notes": "✅ Nenhuma função chamada (correto) | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1188.002109527588,
+        "tokens_used": 688,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_03",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 1966.3512706756592,
+        "tokens_used": 858,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "edge_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1449.0156173706055,
+        "tokens_used": 705,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1330.712080001831,
+        "tokens_used": 704,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_06",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 2205.143928527832,
+        "tokens_used": 879,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "edge_07",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1278.7010669708252,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_08",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1560.0509643554688,
+        "tokens_used": 708,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_09",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1307.2960376739502,
+        "tokens_used": 682,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_10",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1803.5387992858887,
+        "tokens_used": 751,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_11",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 959.2621326446533,
+        "tokens_used": 679,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_12",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1333.1060409545898,
+        "tokens_used": 707,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "complex_scenarios": [
+      {
+        "test_id": "complex_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1430.966854095459,
+        "tokens_used": 704,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1021.453857421875,
+        "tokens_used": 689,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1433.178186416626,
+        "tokens_used": 704,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1335.5457782745361,
+        "tokens_used": 679,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1068.31693649292,
+        "tokens_used": 676,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1249.2249011993408,
+        "tokens_used": 706,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_07",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1840.759038925171,
+        "tokens_used": 698,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_08",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 4033.1380367279053,
+        "tokens_used": 1058,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complex_09",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 919.3949699401855,
+        "tokens_used": 669,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV | ⚠️ Urgência não reconhecida",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_10",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1536.877155303955,
+        "tokens_used": 731,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_11",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1638.127088546753,
+        "tokens_used": 721,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_12",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1024.665117263794,
+        "tokens_used": 677,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_13",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1226.813793182373,
+        "tokens_used": 702,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_14",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1796.9188690185547,
+        "tokens_used": 734,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_15",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1068.7222480773926,
+        "tokens_used": 694,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_16",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1432.9149723052979,
+        "tokens_used": 717,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV | ⚠️ Paradoxo não endereçado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_17",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1021.2421417236328,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_18",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1639.9610042572021,
+        "tokens_used": 705,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_19",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1738.9631271362305,
+        "tokens_used": 702,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_20",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1125.9441375732422,
+        "tokens_used": 685,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "cov_stress_tests": [
+      {
+        "test_id": "cov_stress_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1434.809684753418,
+        "tokens_used": 680,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1536.9141101837158,
+        "tokens_used": 702,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2158.2231521606445,
+        "tokens_used": 738,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_04",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 940.479040145874,
+        "tokens_used": 680,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_05",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2226.5100479125977,
+        "tokens_used": 720,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1227.437973022461,
+        "tokens_used": 671,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_07",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1432.0130348205566,
+        "tokens_used": 705,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_08",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1305.285930633545,
+        "tokens_used": 711,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Verificações: 2/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_09",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1254.502296447754,
+        "tokens_used": 690,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_10",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1330.5790424346924,
+        "tokens_used": 694,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "context_interpretation": [
+      {
+        "test_id": "context_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 979.3941974639893,
+        "tokens_used": 681,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1068.3691501617432,
+        "tokens_used": 685,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1330.9671878814697,
+        "tokens_used": 691,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_04",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1392.6270008087158,
+        "tokens_used": 710,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1472.8820323944092,
+        "tokens_used": 701,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "error_recovery": [
+      {
+        "test_id": "error_01",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1740.854024887085,
+        "tokens_used": 828,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ❌ Erro não detectado: impossible_date | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "error_02",
+        "success": false,
+        "quality_score": 8,
+        "execution_time_ms": 2765.11287689209,
+        "tokens_used": 858,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ✅ Erro detectado: impossible_values | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "error_03",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 3685.492992401123,
+        "tokens_used": 1026,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ❌ Erro não detectado: budget_mismatch | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "error_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1204.9560546875,
+        "tokens_used": 699,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Erro não detectado: multiple_impossibilities | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "error_05",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1120.8100318908691,
+        "tokens_used": 694,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Erro não detectado: specification_conflict | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ]
+  },
+  "cov": {
+    "complete_params": [
+      {
+        "test_id": "complete_meeting_01",
+        "success": true,
+        "quality_score": 5,
+        "execution_time_ms": 2794.649124145508,
+        "tokens_used": 832,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_meeting_02",
+        "success": true,
+        "quality_score": 5,
+        "execution_time_ms": 2969.180107116699,
+        "tokens_used": 837,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_quote_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3380.186080932617,
+        "tokens_used": 849,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_quote_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3378.493070602417,
+        "tokens_used": 836,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4502.913951873779,
+        "tokens_used": 998,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3913.814067840576,
+        "tokens_used": 967,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_meeting_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5843.125104904175,
+        "tokens_used": 859,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_meeting_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2783.9341163635254,
+        "tokens_used": 847,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_quote_03",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 4869.075298309326,
+        "tokens_used": 713,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_04",
+        "success": false,
+        "quality_score": 7,
+        "execution_time_ms": 8808.89892578125,
+        "tokens_used": 718,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_05",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3248.22998046875,
+        "tokens_used": 849,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 9038.740873336792,
+        "tokens_used": 1049,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5427.1979331970215,
+        "tokens_used": 1054,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "complete_prank_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 6039.241075515747,
+        "tokens_used": 1003,
+        "notes": "✅ Função correta chamada | ✅ Validação passou (esperado)",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      }
+    ],
+    "incomplete_params": [
+      {
+        "test_id": "incomplete_meeting_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4404.769659042358,
+        "tokens_used": 679,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_02",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 3681.858777999878,
+        "tokens_used": 836,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ⚠️ Falta humor esperado",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "incomplete_quote_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4448.580026626587,
+        "tokens_used": 703,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3949.136257171631,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4303.405046463013,
+        "tokens_used": 693,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4709.075212478638,
+        "tokens_used": 701,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3449.7649669647217,
+        "tokens_used": 672,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4231.966972351074,
+        "tokens_used": 698,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4301.955938339233,
+        "tokens_used": 713,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5408.764123916626,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_04",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 7085.036993026733,
+        "tokens_used": 716,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3991.161108016968,
+        "tokens_used": 672,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 6248.744964599609,
+        "tokens_used": 712,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4197.57604598999,
+        "tokens_used": 697,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3991.5666580200195,
+        "tokens_used": 690,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "direct_responses": [
+      {
+        "test_id": "trivia_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 6452.620029449463,
+        "tokens_used": 785,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 4710.373878479004,
+        "tokens_used": 712,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_03",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 5632.114887237549,
+        "tokens_used": 761,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_04",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 5894.958972930908,
+        "tokens_used": 750,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_05",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 6287.324905395508,
+        "tokens_used": 824,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_06",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 6966.390132904053,
+        "tokens_used": 783,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_07",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 7371.692180633545,
+        "tokens_used": 856,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_08",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 6863.224983215332,
+        "tokens_used": 784,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_09",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 5900.5491733551025,
+        "tokens_used": 765,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "policy_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 6182.185888290405,
+        "tokens_used": 775,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "policy_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 10314.965009689331,
+        "tokens_used": 855,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_01",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 5557.088136672974,
+        "tokens_used": 787,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 8293.347120285034,
+        "tokens_used": 764,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_03",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 10446.723937988281,
+        "tokens_used": 742,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "edge_cases": [
+      {
+        "test_id": "edge_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4914.708137512207,
+        "tokens_used": 694,
+        "notes": "✅ Nenhuma função chamada (correto) | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 4403.902292251587,
+        "tokens_used": 681,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ✅ Pediu clarificação adequadamente",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_03",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 3173.172950744629,
+        "tokens_used": 853,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "edge_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5119.915008544922,
+        "tokens_used": 707,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5015.902996063232,
+        "tokens_used": 717,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_06",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 6248.283863067627,
+        "tokens_used": 826,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha)",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "edge_07",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5323.676824569702,
+        "tokens_used": 693,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_08",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3994.7779178619385,
+        "tokens_used": 698,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_09",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 4710.308074951172,
+        "tokens_used": 669,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ✅ Pediu clarificação adequadamente",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_10",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 4609.834909439087,
+        "tokens_used": 738,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_11",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3750.070810317993,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_12",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 6078.073978424072,
+        "tokens_used": 719,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "complex_scenarios": [
+      {
+        "test_id": "complex_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4507.349967956543,
+        "tokens_used": 693,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 5578.491926193237,
+        "tokens_used": 772,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5278.604984283447,
+        "tokens_used": 740,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5011.534929275513,
+        "tokens_used": 703,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4566.619873046875,
+        "tokens_used": 685,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4976.086139678955,
+        "tokens_used": 705,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_07",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 7047.83296585083,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_08",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4160.5401039123535,
+        "tokens_used": 686,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_09",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4441.429853439331,
+        "tokens_used": 677,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV | ⚠️ Urgência não reconhecida",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_10",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 5223.325967788696,
+        "tokens_used": 722,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_11",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3787.893056869507,
+        "tokens_used": 683,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_12",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4848.575830459595,
+        "tokens_used": 683,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_13",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4160.473108291626,
+        "tokens_used": 684,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_14",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 6352.102279663086,
+        "tokens_used": 759,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_15",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3965.1591777801514,
+        "tokens_used": 693,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_16",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4230.419397354126,
+        "tokens_used": 705,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV | ⚠️ Paradoxo não endereçado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_17",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 4910.650014877319,
+        "tokens_used": 685,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_18",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4159.08408164978,
+        "tokens_used": 702,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_19",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5261.322259902954,
+        "tokens_used": 720,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_20",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4588.45591545105,
+        "tokens_used": 685,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "cov_stress_tests": [
+      {
+        "test_id": "cov_stress_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 4320.141792297363,
+        "tokens_used": 670,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ✅ Verificações: 1/4 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_02",
+        "success": true,
+        "quality_score": 9,
+        "execution_time_ms": 5016.103982925415,
+        "tokens_used": 724,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Verificações: 2/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3218.7299728393555,
+        "tokens_used": 683,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_04",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 5326.367378234863,
+        "tokens_used": 690,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_05",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 3895.940065383911,
+        "tokens_used": 683,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4968.8560962677,
+        "tokens_used": 701,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_07",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 4798.715829849243,
+        "tokens_used": 703,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_08",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4414.963960647583,
+        "tokens_used": 714,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_09",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4506.847143173218,
+        "tokens_used": 694,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_10",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3348.4790325164795,
+        "tokens_used": 702,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "context_interpretation": [
+      {
+        "test_id": "context_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3821.742057800293,
+        "tokens_used": 690,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Contexto interpretado: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 3591.474771499634,
+        "tokens_used": 677,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4595.315933227539,
+        "tokens_used": 697,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_04",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 5302.737236022949,
+        "tokens_used": 674,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 5057.491064071655,
+        "tokens_used": 713,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "error_recovery": [
+      {
+        "test_id": "error_01",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 4009.1772079467773,
+        "tokens_used": 829,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ❌ Erro não detectado: impossible_date | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "schedule_meeting",
+        "validation_passed": true
+      },
+      {
+        "test_id": "error_02",
+        "success": false,
+        "quality_score": 7,
+        "execution_time_ms": 7113.410711288452,
+        "tokens_used": 903,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ❌ Erro não detectado: impossible_values | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "generate_paper_quote",
+        "validation_passed": true
+      },
+      {
+        "test_id": "error_03",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 4939.017057418823,
+        "tokens_used": 1023,
+        "notes": "✅ Função correta chamada | ⚠️ Validação passou (esperava falha) | ❌ Erro não detectado: budget_mismatch | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "prank_dwight",
+        "validation_passed": true
+      },
+      {
+        "test_id": "error_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4196.394920349121,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Erro não detectado: multiple_impossibilities | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "error_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4179.581165313721,
+        "tokens_used": 709,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Erro não detectado: specification_conflict | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ]
+  },
+  "secure": {
+    "complete_params": [
+      {
+        "test_id": "complete_meeting_01",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1003.0732154846191,
+        "tokens_used": 680,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_meeting_02",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1072.242021560669,
+        "tokens_used": 681,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_01",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1015.235185623169,
+        "tokens_used": 667,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_02",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 748.7978935241699,
+        "tokens_used": 663,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_prank_01",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 987.8377914428711,
+        "tokens_used": 663,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_prank_02",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 901.1638164520264,
+        "tokens_used": 664,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_meeting_03",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 940.9582614898682,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_meeting_04",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 921.9098091125488,
+        "tokens_used": 683,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_03",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 1686.527967453003,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_04",
+        "success": false,
+        "quality_score": 6,
+        "execution_time_ms": 1554.236888885498,
+        "tokens_used": 697,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_quote_05",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1058.6910247802734,
+        "tokens_used": 666,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_prank_03",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 920.3519821166992,
+        "tokens_used": 665,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_prank_04",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1123.0390071868896,
+        "tokens_used": 664,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complete_prank_05",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1026.2188911437988,
+        "tokens_used": 663,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "incomplete_params": [
+      {
+        "test_id": "incomplete_meeting_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1328.2110691070557,
+        "tokens_used": 687,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_02",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 994.8868751525879,
+        "tokens_used": 669,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_01",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1666.4068698883057,
+        "tokens_used": 712,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1537.6381874084473,
+        "tokens_used": 696,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1432.725191116333,
+        "tokens_used": 678,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1126.1849403381348,
+        "tokens_used": 676,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1840.566873550415,
+        "tokens_used": 687,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1230.7019233703613,
+        "tokens_used": 698,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_meeting_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1125.575304031372,
+        "tokens_used": 671,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1432.6770305633545,
+        "tokens_used": 690,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1784.6951484680176,
+        "tokens_used": 718,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_quote_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1286.9758605957031,
+        "tokens_used": 687,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ⚠️ Falta humor esperado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1637.0761394500732,
+        "tokens_used": 709,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1293.7841415405273,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "incomplete_prank_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1358.412742614746,
+        "tokens_used": 696,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "direct_responses": [
+      {
+        "test_id": "trivia_01",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 2510.0560188293457,
+        "tokens_used": 769,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1697.948932647705,
+        "tokens_used": 717,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_03",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2969.0868854522705,
+        "tokens_used": 772,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_04",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 2332.2458267211914,
+        "tokens_used": 772,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_05",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 3606.2989234924316,
+        "tokens_used": 873,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2030.094861984253,
+        "tokens_used": 758,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_07",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 3396.247148513794,
+        "tokens_used": 865,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_08",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2174.4861602783203,
+        "tokens_used": 763,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "trivia_09",
+        "success": true,
+        "quality_score": 9,
+        "execution_time_ms": 3196.2380409240723,
+        "tokens_used": 827,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "policy_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1633.2690715789795,
+        "tokens_used": 732,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "policy_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2823.974847793579,
+        "tokens_used": 802,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2135.232925415039,
+        "tokens_used": 746,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1859.1701984405518,
+        "tokens_used": 741,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "company_03",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1842.1440124511719,
+        "tokens_used": 726,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "edge_cases": [
+      {
+        "test_id": "edge_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1125.9119510650635,
+        "tokens_used": 665,
+        "notes": "✅ Nenhuma função chamada (correto) | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1125.8702278137207,
+        "tokens_used": 685,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_03",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 859.9228858947754,
+        "tokens_used": 678,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1083.0659866333008,
+        "tokens_used": 709,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1537.0533466339111,
+        "tokens_used": 700,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_06",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 819.716215133667,
+        "tokens_used": 670,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_07",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1330.3790092468262,
+        "tokens_used": 672,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_08",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1125.0269412994385,
+        "tokens_used": 685,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_09",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1128.0419826507568,
+        "tokens_used": 679,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_10",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 2559.498071670532,
+        "tokens_used": 767,
+        "notes": "✅ Nenhuma função chamada (correto) | ❌ Validação falhou (inesperado) | ❌ Não pediu clarificação necessária",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_11",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1127.9370784759521,
+        "tokens_used": 685,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "edge_12",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1123.75807762146,
+        "tokens_used": 690,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado)",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "complex_scenarios": [
+      {
+        "test_id": "complex_01",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1514.2321586608887,
+        "tokens_used": 703,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_02",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1456.463098526001,
+        "tokens_used": 711,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 4505.4309368133545,
+        "tokens_used": 746,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_04",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1729.3498516082764,
+        "tokens_used": 693,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1033.5948467254639,
+        "tokens_used": 673,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1739.4449710845947,
+        "tokens_used": 735,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_07",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1535.902976989746,
+        "tokens_used": 705,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_08",
+        "success": false,
+        "quality_score": 5,
+        "execution_time_ms": 1023.6458778381348,
+        "tokens_used": 669,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_09",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1433.319330215454,
+        "tokens_used": 691,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV | ⚠️ Urgência não reconhecida",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_10",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1739.9098873138428,
+        "tokens_used": 692,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_11",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1739.9711608886719,
+        "tokens_used": 723,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_12",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1023.320198059082,
+        "tokens_used": 678,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_13",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1230.057954788208,
+        "tokens_used": 680,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_14",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 2327.6801109313965,
+        "tokens_used": 775,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_15",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1201.4870643615723,
+        "tokens_used": 697,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_16",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1794.5270538330078,
+        "tokens_used": 719,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV | ⚠️ Paradoxo não endereçado",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_17",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1196.5160369873047,
+        "tokens_used": 690,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_18",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1363.2628917694092,
+        "tokens_used": 699,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_19",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1534.501075744629,
+        "tokens_used": 711,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "complex_20",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1578.2661437988281,
+        "tokens_used": 697,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "cov_stress_tests": [
+      {
+        "test_id": "cov_stress_01",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1376.1601448059082,
+        "tokens_used": 696,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ✅ Verificações: 1/4 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1858.6318492889404,
+        "tokens_used": 704,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_03",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1432.8370094299316,
+        "tokens_used": 689,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 818.8910484313965,
+        "tokens_used": 671,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_05",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1641.5290832519531,
+        "tokens_used": 708,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_06",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1164.2460823059082,
+        "tokens_used": 663,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_07",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 2210.756301879883,
+        "tokens_used": 709,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_08",
+        "success": true,
+        "quality_score": 7,
+        "execution_time_ms": 1535.7167720794678,
+        "tokens_used": 703,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_09",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1740.7851219177246,
+        "tokens_used": 715,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ✅ Verificações: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "cov_stress_10",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1580.129861831665,
+        "tokens_used": 713,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Verificações insuficientes | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "context_interpretation": [
+      {
+        "test_id": "context_01",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1183.4180355072021,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Contexto interpretado: 1/3 | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_02",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1331.2549591064453,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1125.6599426269531,
+        "tokens_used": 682,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_04",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1944.694995880127,
+        "tokens_used": 708,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "context_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1446.031093597412,
+        "tokens_used": 706,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Contexto não interpretado | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ],
+    "error_recovery": [
+      {
+        "test_id": "error_01",
+        "success": false,
+        "quality_score": 7,
+        "execution_time_ms": 898.0071544647217,
+        "tokens_used": 676,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ✅ Erro detectado: impossible_date | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "error_02",
+        "success": false,
+        "quality_score": 7,
+        "execution_time_ms": 1032.1993827819824,
+        "tokens_used": 667,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ✅ Erro detectado: impossible_values | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "error_03",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1770.043134689331,
+        "tokens_used": 711,
+        "notes": "❌ Nenhuma função chamada, esperava prank_dwight | ✅ Validação falhou (esperado) | ❌ Erro não detectado: budget_mismatch | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "error_04",
+        "success": true,
+        "quality_score": 8,
+        "execution_time_ms": 1610.6700897216797,
+        "tokens_used": 711,
+        "notes": "❌ Nenhuma função chamada, esperava schedule_meeting | ✅ Validação falhou (esperado) | ❌ Erro não detectado: multiple_impossibilities | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      },
+      {
+        "test_id": "error_05",
+        "success": true,
+        "quality_score": 6,
+        "execution_time_ms": 1432.8267574310303,
+        "tokens_used": 699,
+        "notes": "❌ Nenhuma função chamada, esperava generate_paper_quote | ✅ Validação falhou (esperado) | ❌ Erro não detectado: specification_conflict | 🎯 Caso esperado para melhoria com CoV",
+        "function_called": "none",
+        "validation_passed": false
+      }
+    ]
+  },
+  "summary": {
+    "complete_params": {
+      "original": {
+        "success_rate": 85.71428571428571,
+        "avg_quality": 6.071428571428571,
+        "avg_time_ms": 2960.2003949029104,
+        "avg_tokens": 887.4285714285714
+      },
+      "cov": {
+        "success_rate": 85.71428571428571,
+        "avg_quality": 6.071428571428571,
+        "avg_time_ms": 4785.5485507420135,
+        "avg_tokens": 886.5
+      },
+      "improvements": {
+        "success_rate_diff": 0.0,
+        "quality_diff": 0.0,
+        "time_overhead_pct": 61.6629927819117,
+        "token_overhead_pct": -0.10463618802318278,
+        "secure_vs_orig": {
+          "success_rate_diff": -85.71428571428571,
+          "quality_diff": -0.9285714285714279,
+          "time_overhead_pct": -63.901373072059066,
+          "token_overhead_pct": -24.098518995492597
+        }
+      },
+      "secure": {
+        "success_rate": 0.0,
+        "avg_quality": 5.142857142857143,
+        "avg_time_ms": 1068.591696875436,
+        "avg_tokens": 673.5714285714286
+      }
+    },
+    "incomplete_params": {
+      "original": {
+        "success_rate": 93.33333333333333,
+        "avg_quality": 6.4,
+        "avg_time_ms": 1393.5170809427898,
+        "avg_tokens": 701.3333333333334
+      },
+      "cov": {
+        "success_rate": 93.33333333333333,
+        "avg_quality": 6.066666666666666,
+        "avg_time_ms": 4560.224183400472,
+        "avg_tokens": 703.7333333333333
+      },
+      "improvements": {
+        "success_rate_diff": 0.0,
+        "quality_diff": -0.3333333333333339,
+        "time_overhead_pct": 227.24566105176356,
+        "token_overhead_pct": 0.3422053231939131,
+        "secure_vs_orig": {
+          "success_rate_diff": 0.0,
+          "quality_diff": -0.2666666666666666,
+          "time_overhead_pct": 0.8312878994207922,
+          "token_overhead_pct": -1.4638783269961955
+        }
+      },
+      "secure": {
+        "success_rate": 93.33333333333333,
+        "avg_quality": 6.133333333333334,
+        "avg_time_ms": 1405.101219813029,
+        "avg_tokens": 691.0666666666667
+      }
+    },
+    "direct_responses": {
+      "original": {
+        "success_rate": 100.0,
+        "avg_quality": 7.357142857142857,
+        "avg_time_ms": 2552.8045381818497,
+        "avg_tokens": 781.0
+      },
+      "cov": {
+        "success_rate": 100.0,
+        "avg_quality": 7.428571428571429,
+        "avg_time_ms": 6919.539945466177,
+        "avg_tokens": 781.6428571428571
+      },
+      "improvements": {
+        "success_rate_diff": 0.0,
+        "quality_diff": 0.07142857142857206,
+        "time_overhead_pct": 171.05639472085826,
+        "token_overhead_pct": 0.0823120541430359,
+        "secure_vs_orig": {
+          "success_rate_diff": 0.0,
+          "quality_diff": -0.21428571428571352,
+          "time_overhead_pct": -4.288755638575489,
+          "token_overhead_pct": -0.6493506493506473
+        }
+      },
+      "secure": {
+        "success_rate": 100.0,
+        "avg_quality": 7.142857142857143,
+        "avg_time_ms": 2443.3209896087646,
+        "avg_tokens": 775.9285714285714
+      }
+    },
+    "edge_cases": {
+      "original": {
+        "success_rate": 83.33333333333334,
+        "avg_quality": 6.333333333333333,
+        "avg_time_ms": 1501.6932487487793,
+        "avg_tokens": 727.0
+      },
+      "cov": {
+        "success_rate": 83.33333333333334,
+        "avg_quality": 6.416666666666667,
+        "avg_time_ms": 4778.55231364568,
+        "avg_tokens": 723.9166666666666
+      },
+      "improvements": {
+        "success_rate_diff": 0.0,
+        "quality_diff": 0.08333333333333393,
+        "time_overhead_pct": 218.21094738404142,
+        "token_overhead_pct": -0.4241173773498448,
+        "secure_vs_orig": {
+          "success_rate_diff": 0.0,
+          "quality_diff": -0.16666666666666607,
+          "time_overhead_pct": -17.059282987206483,
+          "token_overhead_pct": -5.03209536909675
+        }
+      },
+      "secure": {
+        "success_rate": 83.33333333333334,
+        "avg_quality": 6.166666666666667,
+        "avg_time_ms": 1245.5151478449504,
+        "avg_tokens": 690.4166666666666
+      }
+    },
+    "complex_scenarios": {
+      "original": {
+        "success_rate": 95.0,
+        "avg_quality": 6.2,
+        "avg_time_ms": 1479.1564106941223,
+        "avg_tokens": 717.15
+      },
+      "cov": {
+        "success_rate": 100.0,
+        "avg_quality": 6.3,
+        "avg_time_ms": 4852.797591686249,
+        "avg_tokens": 703.2
+      },
+      "improvements": {
+        "success_rate_diff": 5.0,
+        "quality_diff": 0.09999999999999964,
+        "time_overhead_pct": 228.07873167442656,
+        "token_overhead_pct": -1.9451997490064745,
+        "secure_vs_orig": {
+          "success_rate_diff": 0.0,
+          "quality_diff": -0.10000000000000053,
+          "time_overhead_pct": 10.538964610214393,
+          "token_overhead_pct": -1.7848427804503877
+        }
+      },
+      "secure": {
+        "success_rate": 95.0,
+        "avg_quality": 6.1,
+        "avg_time_ms": 1635.0441813468933,
+        "avg_tokens": 704.35
+      }
+    },
+    "cov_stress_tests": {
+      "original": {
+        "success_rate": 100.0,
+        "avg_quality": 6.6,
+        "avg_time_ms": 1484.6754312515259,
+        "avg_tokens": 699.1
+      },
+      "cov": {
+        "success_rate": 100.0,
+        "avg_quality": 6.8,
+        "avg_time_ms": 4381.514525413513,
+        "avg_tokens": 696.4
+      },
+      "improvements": {
+        "success_rate_diff": 0.0,
+        "quality_diff": 0.20000000000000018,
+        "time_overhead_pct": 195.115985163172,
+        "token_overhead_pct": -0.3862108425118074,
+        "secure_vs_orig": {
+          "success_rate_diff": 0.0,
+          "quality_diff": 0.20000000000000018,
+          "time_overhead_pct": 3.4548221915084802,
+          "token_overhead_pct": -0.2860821055642969
+        }
+      },
+      "secure": {
+        "success_rate": 100.0,
+        "avg_quality": 6.8,
+        "avg_time_ms": 1535.9683275222778,
+        "avg_tokens": 697.1
+      }
+    },
+    "context_interpretation": {
+      "original": {
+        "success_rate": 100.0,
+        "avg_quality": 6.6,
+        "avg_time_ms": 1248.8479137420654,
+        "avg_tokens": 693.6
+      },
+      "cov": {
+        "success_rate": 100.0,
+        "avg_quality": 6.4,
+        "avg_time_ms": 4473.752212524414,
+        "avg_tokens": 690.2
+      },
+      "improvements": {
+        "success_rate_diff": 0.0,
+        "quality_diff": -0.1999999999999993,
+        "time_overhead_pct": 258.23034680974087,
+        "token_overhead_pct": -0.49019607843136925,
+        "secure_vs_orig": {
+          "success_rate_diff": 0.0,
+          "quality_diff": -0.1999999999999993,
+          "time_overhead_pct": 12.600725025838825,
+          "token_overhead_pct": -0.23068050749711974
+        }
+      },
+      "secure": {
+        "success_rate": 100.0,
+        "avg_quality": 6.4,
+        "avg_time_ms": 1406.211805343628,
+        "avg_tokens": 692.0
+      }
+    },
+    "error_recovery": {
+      "original": {
+        "success_rate": 40.0,
+        "avg_quality": 6.6,
+        "avg_time_ms": 2103.4451961517334,
+        "avg_tokens": 821.0
+      },
+      "cov": {
+        "success_rate": 40.0,
+        "avg_quality": 6.0,
+        "avg_time_ms": 4887.516212463379,
+        "avg_tokens": 831.2
+      },
+      "improvements": {
+        "success_rate_diff": 0.0,
+        "quality_diff": -0.5999999999999996,
+        "time_overhead_pct": 132.3576683340798,
+        "token_overhead_pct": 1.242387332521321,
+        "secure_vs_orig": {
+          "success_rate_diff": 20.0,
+          "quality_diff": 0.20000000000000018,
+          "time_overhead_pct": -35.87903757676717,
+          "token_overhead_pct": -15.615103532277717
+        }
+      },
+      "secure": {
+        "success_rate": 60.0,
+        "avg_quality": 6.8,
+        "avg_time_ms": 1348.749303817749,
+        "avg_tokens": 692.8
+      }
+    }
+  },
+  "test_counts": {
+    "original": 95,
+    "cov": 95,
+    "secure": 95
+  }
+}

@@ -1,0 +1,23 @@
+📊 RELATÓRIO DE COMPARAÇÃO - ORIGINAL vs CHAIN OF VERIFICATION
+======================================================================
+
+📈 RESUMO:
+   • Execuções Original: 11
+   • Execuções CoV: 11
+   • Data: 2025-07-11T01:37:53
+
+⏱️ LATÊNCIA:
+   • Original: 2030.46ms
+   • CoV: 2735.00ms
+   • CoV é 34.7% mais lenta
+
+🔤 TOKENS:
+   • Original (média): 764
+   • CoV (média): 758
+   • CoV verificação: 14
+   • CoV usa 0.99x mais tokens
+
+✅ QUALIDADE:
+   • Taxa sucesso Original: 100.0%
+   • Taxa sucesso CoV: 100.0%
+   • CoV fez correções: 0.0%

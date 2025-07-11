@@ -1,0 +1,1008 @@
+{
+  "test_suite_info": {
+    "name": "DunderOps Assistant Test Cases",
+    "version": "1.0",
+    "description": "Casos de teste padronizados para comparação entre implementação original e Chain of Verification",
+    "categories": ["complete_params", "incomplete_params", "direct_responses", "edge_cases", "complex_scenarios", "cov_stress_tests", "context_interpretation", "error_recovery"]
+  },
+  "test_cases": {
+    "complete_params": {
+      "description": "Casos com todos os parâmetros necessários fornecidos",
+      "expected_behavior": "Função deve ser executada com sucesso",
+      "cases": [
+        {
+          "id": "complete_meeting_01",
+          "input": "Agendar reunião sobre vendas para 2024-01-15 às 14:00 na Conference Room",
+          "expected_function": "schedule_meeting",
+          "expected_params": {
+            "topic": "vendas",
+            "date": "2024-01-15",
+            "time": "14:00",
+            "room": "Conference Room"
+          },
+          "expected_success": true,
+          "category": "meeting"
+        },
+        {
+          "id": "complete_meeting_02", 
+          "input": "Marcar reunião de budget Q4 dia 20/01/2024 15h30 no Annex",
+          "expected_function": "schedule_meeting",
+          "expected_params": {
+            "topic": "budget Q4",
+            "date": "2024-01-20",
+            "time": "15:30",
+            "room": "Annex"
+          },
+          "expected_success": true,
+          "category": "meeting"
+        },
+        {
+          "id": "complete_quote_01",
+          "input": "Gerar orçamento para 1000 folhas de papel A4 120gsm",
+          "expected_function": "generate_paper_quote",
+          "expected_params": {
+            "paper_type": "A4",
+            "weight_gsm": 120,
+            "quantity": 1000
+          },
+          "expected_success": true,
+          "category": "quote"
+        },
+        {
+          "id": "complete_quote_02",
+          "input": "Preciso de orçamento para 500 folhas papel Legal 80gsm",
+          "expected_function": "generate_paper_quote", 
+          "expected_params": {
+            "paper_type": "Legal",
+            "weight_gsm": 80,
+            "quantity": 500
+          },
+          "expected_success": true,
+          "category": "quote"
+        },
+        {
+          "id": "complete_prank_01",
+          "input": "Sugerir pegadinha no Dwight tipo desk com orçamento de $20",
+          "expected_function": "prank_dwight",
+          "expected_params": {
+            "prank_type": "desk",
+            "max_budget_usd": 20
+          },
+          "expected_success": true,
+          "category": "prank"
+        },
+        {
+          "id": "complete_prank_02",
+          "input": "Ideias de pegadinha de comida para o Dwight, budget máximo $15",
+          "expected_function": "prank_dwight",
+          "expected_params": {
+            "prank_type": "food", 
+            "max_budget_usd": 15
+          },
+          "expected_success": true,
+          "category": "prank"
+        },
+        {
+          "id": "complete_meeting_03",
+          "input": "Agendar reunião de planejamento estratégico para 2024-02-10 às 09:00 no Board Room",
+          "expected_function": "schedule_meeting",
+          "expected_params": {
+            "topic": "planejamento estratégico",
+            "date": "2024-02-10",
+            "time": "09:00",
+            "room": "Board Room"
+          },
+          "expected_success": true,
+          "category": "meeting"
+        },
+        {
+          "id": "complete_meeting_04",
+          "input": "Marcar reunião de review trimestral dia 25/02/2024 às 16h45 na sala pequena",
+          "expected_function": "schedule_meeting",
+          "expected_params": {
+            "topic": "review trimestral",
+            "date": "2024-02-25",
+            "time": "16:45",
+            "room": "sala pequena"
+          },
+          "expected_success": true,
+          "category": "meeting"
+        },
+        {
+          "id": "complete_quote_03",
+          "input": "Gerar orçamento para 2500 folhas de papel A3 100gsm",
+          "expected_function": "generate_paper_quote",
+          "expected_params": {
+            "paper_type": "A3",
+            "weight_gsm": 100,
+            "quantity": 2500
+          },
+          "expected_success": true,
+          "category": "quote"
+        },
+        {
+          "id": "complete_quote_04",
+          "input": "Preciso de orçamento para 750 folhas papel Tabloid 90gsm",
+          "expected_function": "generate_paper_quote",
+          "expected_params": {
+            "paper_type": "Tabloid",
+            "weight_gsm": 90,
+            "quantity": 750
+          },
+          "expected_success": true,
+          "category": "quote"
+        },
+        {
+          "id": "complete_quote_05",
+          "input": "Orçamento para 10000 folhas Letter 70gsm para impressão em massa",
+          "expected_function": "generate_paper_quote",
+          "expected_params": {
+            "paper_type": "Letter",
+            "weight_gsm": 70,
+            "quantity": 10000
+          },
+          "expected_success": true,
+          "category": "quote"
+        },
+        {
+          "id": "complete_prank_03",
+          "input": "Sugerir pegadinha de escritório no Dwight tipo paperwork com orçamento de $25",
+          "expected_function": "prank_dwight",
+          "expected_params": {
+            "prank_type": "paperwork",
+            "max_budget_usd": 25
+          },
+          "expected_success": true,
+          "category": "prank"
+        },
+        {
+          "id": "complete_prank_04",
+          "input": "Ideias de pegadinha de technology para o Dwight, budget máximo $30",
+          "expected_function": "prank_dwight",
+          "expected_params": {
+            "prank_type": "technology",
+            "max_budget_usd": 30
+          },
+          "expected_success": true,
+          "category": "prank"
+        },
+        {
+          "id": "complete_prank_05",
+          "input": "Pegadinha clássica no Dwight tipo office supplies com budget de $12",
+          "expected_function": "prank_dwight",
+          "expected_params": {
+            "prank_type": "office supplies",
+            "max_budget_usd": 12
+          },
+          "expected_success": true,
+          "category": "prank"
+        }
+      ]
+    },
+    "incomplete_params": {
+      "description": "Casos com parâmetros faltantes - devem gerar respostas humorísticas",
+      "expected_behavior": "Função não deve ser executada, resposta com humor pedindo parâmetros",
+      "cases": [
+        {
+          "id": "incomplete_meeting_01",
+          "input": "Preciso agendar uma reunião sobre vendas",
+          "expected_function": "schedule_meeting",
+          "missing_params": ["date", "time", "room"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "meeting"
+        },
+        {
+          "id": "incomplete_meeting_02",
+          "input": "Marcar reunião para amanhã às 14h",
+          "expected_function": "schedule_meeting",
+          "missing_params": ["topic", "room"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "meeting"
+        },
+        {
+          "id": "incomplete_quote_01",
+          "input": "Quanto custa papel A4?",
+          "expected_function": "generate_paper_quote",
+          "missing_params": ["weight_gsm", "quantity"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "quote"
+        },
+        {
+          "id": "incomplete_quote_02",
+          "input": "Preciso de orçamento para papel",
+          "expected_function": "generate_paper_quote",
+          "missing_params": ["paper_type", "weight_gsm", "quantity"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "quote"
+        },
+        {
+          "id": "incomplete_prank_01",
+          "input": "Quero fazer uma pegadinha no Dwight",
+          "expected_function": "prank_dwight",
+          "missing_params": ["prank_type", "max_budget_usd"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "prank"
+        },
+        {
+          "id": "incomplete_prank_02",
+          "input": "Ideias de pegadinha de mesa para o Dwight",
+          "expected_function": "prank_dwight",
+          "missing_params": ["max_budget_usd"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "prank"
+        },
+        {
+          "id": "incomplete_meeting_03",
+          "input": "Preciso marcar reunião sobre contratos na próxima semana",
+          "expected_function": "schedule_meeting",
+          "missing_params": ["date", "time", "room"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "meeting"
+        },
+        {
+          "id": "incomplete_meeting_04",
+          "input": "Agendar call de alinhamento para quinta-feira",
+          "expected_function": "schedule_meeting",
+          "missing_params": ["time", "room"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "meeting"
+        },
+        {
+          "id": "incomplete_meeting_05",
+          "input": "Reunião de brainstorm às 10h na sala azul",
+          "expected_function": "schedule_meeting",
+          "missing_params": ["date", "topic"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "meeting"
+        },
+        {
+          "id": "incomplete_quote_03",
+          "input": "Orçamento para 3000 folhas de papel",
+          "expected_function": "generate_paper_quote",
+          "missing_params": ["paper_type", "weight_gsm"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "quote"
+        },
+        {
+          "id": "incomplete_quote_04",
+          "input": "Quanto custa papel de qualidade?",
+          "expected_function": "generate_paper_quote",
+          "missing_params": ["paper_type", "weight_gsm", "quantity"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "quote"
+        },
+        {
+          "id": "incomplete_quote_05",
+          "input": "Preciso de papel A4 para o escritório",
+          "expected_function": "generate_paper_quote",
+          "missing_params": ["weight_gsm", "quantity"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "quote"
+        },
+        {
+          "id": "incomplete_prank_03",
+          "input": "Como posso fazer uma pegadinha épica no Dwight?",
+          "expected_function": "prank_dwight",
+          "missing_params": ["prank_type", "max_budget_usd"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "prank"
+        },
+        {
+          "id": "incomplete_prank_04",
+          "input": "Pegadinha de technology no Dwight",
+          "expected_function": "prank_dwight",
+          "missing_params": ["max_budget_usd"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "prank"
+        },
+        {
+          "id": "incomplete_prank_05",
+          "input": "Quero irritar o Dwight com budget baixo",
+          "expected_function": "prank_dwight",
+          "missing_params": ["prank_type"],
+          "expected_success": false,
+          "should_contain_humor": true,
+          "category": "prank"
+        }
+      ]
+    },
+    "direct_responses": {
+      "description": "Casos que não requerem função - respostas diretas sobre The Office",
+      "expected_behavior": "Resposta direta sem chamada de função",
+      "cases": [
+        {
+          "id": "trivia_01",
+          "input": "Quem é o Michael Scott?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_mention": ["chefe", "regional", "Scranton", "gerente"],
+          "category": "trivia"
+        },
+        {
+          "id": "trivia_02",
+          "input": "Como está o time de vendas hoje?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_be_humorous": true,
+          "category": "trivia"
+        },
+        {
+          "id": "trivia_03",
+          "input": "Qual é a política de feriados da empresa?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_be_humorous": true,
+          "category": "policy"
+        },
+        {
+          "id": "trivia_04",
+          "input": "O que o Jim pensa do Dwight?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_mention": ["Jim", "Dwight", "pegadinha"],
+          "category": "trivia"
+        },
+        {
+          "id": "trivia_05",
+          "input": "Como funciona a Dunder Mifflin?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_mention": ["papel", "escritório", "vendas"],
+          "category": "company"
+        },
+        {
+          "id": "trivia_06",
+          "input": "Quem é o Stanley Hudson?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_mention": ["vendas", "crosswords", "florida"],
+          "category": "trivia"
+        },
+        {
+          "id": "trivia_07",
+          "input": "O que aconteceu no episódio do Fire Drill?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_be_humorous": true,
+          "should_mention": ["Angela", "gato", "Kevin", "vending machine"],
+          "category": "trivia"
+        },
+        {
+          "id": "trivia_08",
+          "input": "Qual é a relação entre Jim e Pam?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_mention": ["romance", "casamento", "recepção"],
+          "category": "trivia"
+        },
+        {
+          "id": "trivia_09",
+          "input": "Como é a personalidade do Kevin Malone?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_be_humorous": true,
+          "should_mention": ["contabilidade", "chili", "números"],
+          "category": "trivia"
+        },
+        {
+          "id": "policy_01",
+          "input": "Qual é a política de dress code da empresa?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_be_humorous": true,
+          "category": "policy"
+        },
+        {
+          "id": "policy_02",
+          "input": "Como funcionam os benefícios da Dunder Mifflin?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_be_humorous": true,
+          "category": "policy"
+        },
+        {
+          "id": "company_01",
+          "input": "Quais são os principais produtos da empresa?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_mention": ["papel", "suprimentos", "escritório"],
+          "category": "company"
+        },
+        {
+          "id": "company_02",
+          "input": "Como está o mercado de papel atualmente?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_be_humorous": true,
+          "category": "company"
+        },
+        {
+          "id": "company_03",
+          "input": "Qual é a missão da Dunder Mifflin?",
+          "expected_function": null,
+          "expected_success": true,
+          "should_mention": ["papel", "qualidade", "clientes"],
+          "category": "company"
+        }
+      ]
+    },
+    "edge_cases": {
+      "description": "Casos extremos e situações limítrofes",
+      "expected_behavior": "Sistema deve lidar graciosamente com inputs incomuns",
+      "cases": [
+        {
+          "id": "edge_01",
+          "input": "",
+          "expected_function": null,
+          "expected_success": false,
+          "should_handle_gracefully": true,
+          "category": "empty"
+        },
+        {
+          "id": "edge_02",
+          "input": "asdjfklasdjf aslkdfj alksjdf",
+          "expected_function": null,
+          "expected_success": true,
+          "should_ask_clarification": true,
+          "category": "nonsense"
+        },
+        {
+          "id": "edge_03",
+          "input": "Agendar reunião para 32/15/2024 às 25:70 no espaço sideral",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "should_identify_invalid_values": true,
+          "category": "invalid_values"
+        },
+        {
+          "id": "edge_04",
+          "input": "Orçamento para -500 folhas de papel de 999gsm",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "should_identify_invalid_values": true,
+          "category": "invalid_values"
+        },
+        {
+          "id": "edge_05",
+          "input": "Pegadinha no Dwight com budget de $-10",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "should_identify_invalid_values": true,
+          "category": "invalid_values"
+        },
+        {
+          "id": "edge_06",
+          "input": "Agendar reunião para ontem às 30:99",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "should_identify_invalid_values": true,
+          "category": "invalid_values"
+        },
+        {
+          "id": "edge_07",
+          "input": "Orçamento para papel de 0gsm",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "should_identify_invalid_values": true,
+          "category": "invalid_values"
+        },
+        {
+          "id": "edge_08",
+          "input": "!@#$%^&*()",
+          "expected_function": null,
+          "expected_success": true,
+          "should_ask_clarification": true,
+          "category": "nonsense"
+        },
+        {
+          "id": "edge_09",
+          "input": "123456789",
+          "expected_function": null,
+          "expected_success": true,
+          "should_ask_clarification": true,
+          "category": "nonsense"
+        },
+        {
+          "id": "edge_10",
+          "input": "reunião papel pegadinha dwight michael jim",
+          "expected_function": null,
+          "expected_success": true,
+          "should_ask_clarification": true,
+          "category": "fragmented"
+        },
+        {
+          "id": "edge_11",
+          "input": "AGENDAR REUNIÃO URGENTE AGORA!!!!!!",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "should_handle_caps": true,
+          "category": "caps_urgent"
+        },
+        {
+          "id": "edge_12",
+          "input": "Preciso de papel. Muito papel. Todo o papel do mundo.",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "should_handle_vague": true,
+          "category": "vague_excessive"
+        }
+      ]
+    },
+    "complex_scenarios": {
+      "description": "Cenários complexos que requerem interpretação e contexto",
+      "expected_behavior": "Chain of Verification deve mostrar maior benefício aqui",
+      "cases": [
+        {
+          "id": "complex_01",
+          "input": "Agendar reunião urgente sobre o budget Q4 amanhã de manhã",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "requires_clarification": ["data_especifica", "horario_especifico", "sala"],
+          "cov_should_improve": true,
+          "category": "ambiguous"
+        },
+        {
+          "id": "complex_02", 
+          "input": "Preciso de papel para impressão em massa, barato mas qualidade boa",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "requires_clarification": ["tipo_papel", "quantidade", "peso_gsm"],
+          "cov_should_improve": true,
+          "category": "ambiguous"
+        },
+        {
+          "id": "complex_03",
+          "input": "O que posso fazer para irritar o Dwight sem gastar muito?",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "requires_clarification": ["tipo_pegadinha", "budget_especifico"],
+          "cov_should_improve": true,
+          "category": "ambiguous"
+        },
+        {
+          "id": "complex_04",
+          "input": "Reunião com toda a equipe para discutir as vendas do trimestre na sala grande",
+          "expected_function": "schedule_meeting", 
+          "expected_success": false,
+          "requires_clarification": ["data", "horario"],
+          "has_some_params": true,
+          "cov_should_improve": true,
+          "category": "partial_info"
+        },
+        {
+          "id": "complex_05",
+          "input": "Papel bom para apresentações importantes, uns 200 folhas",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "requires_clarification": ["tipo_papel", "peso_gsm"],
+          "has_some_params": true,
+          "cov_should_improve": true,
+          "category": "partial_info"
+        },
+        {
+          "id": "complex_06",
+          "input": "Reunião com os diretores sobre os resultados do último trimestre, precisa ser em uma sala que comporte pelo menos 10 pessoas",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "requires_clarification": ["data", "horario"],
+          "has_some_params": true,
+          "cov_should_improve": true,
+          "category": "partial_info"
+        },
+        {
+          "id": "complex_07",
+          "input": "Orçamento para papel premium que não amasse fácil, vamos imprimir contratos importantes",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "requires_clarification": ["paper_type", "quantity", "peso_gsm"],
+          "cov_should_improve": true,
+          "category": "qualitative_requirements"
+        },
+        {
+          "id": "complex_08",
+          "input": "Pegadinha no Dwight que seja épica mas não muito cara, algo que ele vai lembrar para sempre",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "requires_clarification": ["prank_type", "max_budget_usd"],
+          "cov_should_improve": true,
+          "category": "qualitative_requirements"
+        },
+        {
+          "id": "complex_09",
+          "input": "Agendar reunião de emergência sobre o problema do cliente VIP que reclamou ontem",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "requires_clarification": ["data", "horario", "sala"],
+          "cov_should_improve": true,
+          "urgency_context": true,
+          "category": "urgent_context"
+        },
+        {
+          "id": "complex_10",
+          "input": "Preciso de muito papel, vai ter uma campanha de marketing enorme na próxima semana",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "requires_clarification": ["paper_type", "weight_gsm", "quantity_específica"],
+          "cov_should_improve": true,
+          "context_provided": true,
+          "category": "business_context"
+        },
+        {
+          "id": "complex_11",
+          "input": "O Michael quer fazer uma pegadinha no Dwight para o aniversário dele, algo especial",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "requires_clarification": ["prank_type", "max_budget_usd"],
+          "cov_should_improve": true,
+          "character_context": true,
+          "category": "character_context"
+        },
+        {
+          "id": "complex_12",
+          "input": "Reunião para revisar os processos de vendas, todos do time comercial devem participar",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "requires_clarification": ["data", "horario", "sala_adequada"],
+          "has_some_params": true,
+          "cov_should_improve": true,
+          "category": "team_context"
+        },
+        {
+          "id": "complex_13",
+          "input": "Papel para a impressora nova que chegou, ela é uma HP LaserJet Pro",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "requires_clarification": ["paper_type", "weight_gsm", "quantity"],
+          "cov_should_improve": true,
+          "equipment_context": true,
+          "category": "technical_context"
+        },
+        {
+          "id": "complex_14",
+          "input": "Pegadinha clássica estilo Jim Halpert no Dwight, mas adaptada para 2024",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "requires_clarification": ["prank_type_especifico", "max_budget_usd"],
+          "cov_should_improve": true,
+          "reference_context": true,
+          "category": "reference_context"
+        },
+        {
+          "id": "complex_15",
+          "input": "Agendar call sobre o novo sistema de CRM, vamos precisar de pelo menos 2 horas",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "requires_clarification": ["data", "horario_inicio"],
+          "has_some_params": true,
+          "cov_should_improve": true,
+          "category": "duration_context"
+        },
+        {
+          "id": "complex_16",
+          "input": "Orçamento para papel que seja econômico mas não pareça barato, vai para clientes importantes",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "requires_clarification": ["paper_type", "weight_gsm", "quantity"],
+          "cov_should_improve": true,
+          "quality_paradox": true,
+          "category": "paradoxical_requirements"
+        },
+        {
+          "id": "complex_17",
+          "input": "Reunião sobre o orçamento do próximo ano, só gerentes e diretores",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "requires_clarification": ["data", "horario", "sala_executiva"],
+          "cov_should_improve": true,
+          "hierarchy_context": true,
+          "category": "hierarchical_context"
+        },
+        {
+          "id": "complex_18",
+          "input": "Pegadinha no Dwight que use materiais de escritório que já temos aqui",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "requires_clarification": ["prank_type", "max_budget_usd"],
+          "cov_should_improve": true,
+          "resource_constraint": true,
+          "category": "resource_constraints"
+        },
+        {
+          "id": "complex_19",
+          "input": "Preciso agendar uma sequência de reuniões sobre o projeto Alpha, uma por semana",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "requires_clarification": ["data_inicio", "horario", "sala", "quantas_semanas"],
+          "cov_should_improve": true,
+          "multiple_instances": true,
+          "category": "series_planning"
+        },
+        {
+          "id": "complex_20",
+          "input": "Papel especial para certificados de reconhecimento dos funcionários do mês",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "requires_clarification": ["paper_type_premium", "weight_gsm", "quantity"],
+          "cov_should_improve": true,
+          "ceremonial_context": true,
+          "category": "ceremonial_purpose"
+        }
+      ]
+    },
+    "cov_stress_tests": {
+      "description": "Testes específicos para verificar onde CoV deve ter maior impacto",
+      "expected_behavior": "CoV deve mostrar melhorias significativas em verificação e correção",
+      "cases": [
+        {
+          "id": "cov_stress_01",
+          "input": "Agendar reunião importante amanhã cedo para discussão confidencial",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["data_especifica", "horario_especifico", "sala_apropriada", "topic_claro"],
+          "category": "verification_cascade"
+        },
+        {
+          "id": "cov_stress_02",
+          "input": "Papel de alta qualidade para impressão em cores, quantidade industrial",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["paper_type_color", "weight_gsm_apropriado", "quantity_industrial_especifica"],
+          "category": "specification_verification"
+        },
+        {
+          "id": "cov_stress_03",
+          "input": "Pegadinha elaborada no Dwight que seja memorável mas respeitosa",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["prank_type_elaborado", "budget_apropriado", "respeitosa_definicao"],
+          "category": "constraint_verification"
+        },
+        {
+          "id": "cov_stress_04",
+          "input": "Reunião sobre vendas do Q1 na sala principal para toda equipe comercial dia 15",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["mes_ano_do_dia_15", "horario_faltante", "capacidade_sala"],
+          "category": "implicit_verification"
+        },
+        {
+          "id": "cov_stress_05",
+          "input": "Orçamento para papel sustentável reciclado, prioridade é o meio ambiente",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["paper_type_sustentavel", "weight_gsm", "quantity"],
+          "category": "values_verification"
+        },
+        {
+          "id": "cov_stress_06",
+          "input": "Pegadinha no Dwight usando tecnologia que ele não entende",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["technology_type", "complexity_level", "budget"],
+          "category": "technical_verification"
+        },
+        {
+          "id": "cov_stress_07",
+          "input": "Agendar videoconferência com clientes internacionais, considerar fuso horário",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["timezone_consideration", "date", "platform_tech"],
+          "category": "timezone_verification"
+        },
+        {
+          "id": "cov_stress_08",
+          "input": "Papel premium para proposta comercial que pode fechar negócio de $1M",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["premium_grade", "quantity_proposta", "impact_verification"],
+          "category": "stakes_verification"
+        },
+        {
+          "id": "cov_stress_09",
+          "input": "Reunião de feedback 360 graus, ambiente precisa ser neutro e confortável",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["ambiente_neutro", "participantes", "duration_feedback"],
+          "category": "environment_verification"
+        },
+        {
+          "id": "cov_stress_10",
+          "input": "Pegadinha no Dwight que ensine algo sobre trabalho em equipe",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "verification_points": ["educational_component", "team_building", "appropriateness"],
+          "category": "educational_verification"
+        }
+      ]
+    },
+    "context_interpretation": {
+      "description": "Testes para verificar capacidade de interpretação contextual",
+      "expected_behavior": "CoV deve melhorar interpretação de contexto implícito",
+      "cases": [
+        {
+          "id": "context_01",
+          "input": "O cliente da Microsoft está vindo na sexta, preciso de papel para a apresentação",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "context_clues": ["cliente_importante", "apresentacao_formal", "timeline_sexta"],
+          "category": "business_context"
+        },
+        {
+          "id": "context_02",
+          "input": "Reunião pós-mortem do projeto que falhou, todo mundo está chateado",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "context_clues": ["emotional_context", "retrospective", "team_morale"],
+          "category": "emotional_context"
+        },
+        {
+          "id": "context_03",
+          "input": "Pegadinha no Dwight para alegrar o ambiente, andamos meio tensos",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "context_clues": ["mood_lifting", "workplace_tension", "team_building"],
+          "category": "mood_context"
+        },
+        {
+          "id": "context_04",
+          "input": "Reunião sobre o novo estagiário, ele vai começar segunda",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "context_clues": ["onboarding", "timing_urgency", "team_integration"],
+          "category": "onboarding_context"
+        },
+        {
+          "id": "context_05",
+          "input": "Papel para imprimir currículos, estamos contratando para vários cargos",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "context_clues": ["hiring_process", "multiple_positions", "professional_appearance"],
+          "category": "hiring_context"
+        }
+      ]
+    },
+    "error_recovery": {
+      "description": "Testes de recuperação de erros e autocorreção",
+      "expected_behavior": "CoV deve detectar e corrigir inconsistências",
+      "cases": [
+        {
+          "id": "error_01",
+          "input": "Agendar reunião para 30 de fevereiro às 14h na Conference Room sobre vendas",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "error_type": "impossible_date",
+          "category": "date_validation"
+        },
+        {
+          "id": "error_02",
+          "input": "Orçamento para -500 folhas de papel A4 com peso de 500gsm",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "error_type": "impossible_values",
+          "category": "parameter_validation"
+        },
+        {
+          "id": "error_03",
+          "input": "Pegadinha no Dwight com orçamento de $10000 para algo simples",
+          "expected_function": "prank_dwight",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "error_type": "budget_mismatch",
+          "category": "logic_validation"
+        },
+        {
+          "id": "error_04",
+          "input": "Reunião às 25:30 sobre o projeto Alpha na sala que não existe",
+          "expected_function": "schedule_meeting",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "error_type": "multiple_impossibilities",
+          "category": "compound_errors"
+        },
+        {
+          "id": "error_05",
+          "input": "Papel A4 de 0gsm para impressão laser de alta qualidade",
+          "expected_function": "generate_paper_quote",
+          "expected_success": false,
+          "cov_should_improve": true,
+          "error_type": "specification_conflict",
+          "category": "specification_validation"
+        }
+      ]
+    }
+  },
+  "evaluation_criteria": {
+    "success_metrics": [
+      "function_called_correctly",
+      "parameters_complete",
+      "response_quality",
+      "humor_appropriateness",
+      "information_completeness",
+      "context_understanding",
+      "error_detection",
+      "verification_accuracy"
+    ],
+    "cov_improvement_areas": [
+      "ambiguous_inputs",
+      "partial_information",
+      "error_correction", 
+      "response_completeness",
+      "parameter_validation",
+      "context_interpretation",
+      "specification_verification",
+      "constraint_checking",
+      "logical_consistency",
+      "implicit_requirement_detection"
+    ],
+    "quality_indicators": {
+      "humor": "Should maintain The Office tone consistently",
+      "helpfulness": "Should guide user to provide missing info clearly", 
+      "accuracy": "Should not hallucinate parameters or make assumptions",
+      "completeness": "Should address the user's need fully and contextually",
+      "verification": "Should verify information consistency and validity",
+      "context_awareness": "Should understand implicit context and constraints",
+      "error_handling": "Should gracefully handle and correct obvious errors"
+    },
+    "cov_specific_metrics": {
+      "verification_depth": "How thoroughly CoV verifies information",
+      "error_detection_rate": "Percentage of logical errors caught",
+      "context_extraction": "Ability to extract implicit requirements",
+      "constraint_validation": "Validation of business rules and constraints",
+      "assumption_reduction": "Reduction in invalid assumptions made",
+      "clarification_quality": "Quality of questions asked for missing info"
+    },
+    "performance_benchmarks": {
+      "complete_params": {
+        "target_success_rate": 95,
+        "expected_cov_improvement": 2
+      },
+      "incomplete_params": {
+        "target_success_rate": 85,
+        "expected_cov_improvement": 15
+      },
+      "complex_scenarios": {
+        "target_success_rate": 70,
+        "expected_cov_improvement": 25
+      },
+      "cov_stress_tests": {
+        "target_success_rate": 60,
+        "expected_cov_improvement": 40
+      },
+      "error_recovery": {
+        "target_success_rate": 80,
+        "expected_cov_improvement": 50
+      }
+    }
+  }
+}

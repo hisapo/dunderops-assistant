@@ -1,0 +1,60 @@
+{
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "schedule_meeting",
+        "description": "Agenda uma reunião no calendário da filial Scranton.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "topic": { "type": "string", "description": "Assunto da reunião" },
+            "date":  { "type": "string", "format": "date" },
+            "time":  { "type": "string", "pattern": "^\\d{2}:\\d{2}$" },
+            "room":  { "type": "string", "enum": ["Conference Room", "Annex", "Break Room"] }
+          },
+          "required": ["topic", "date", "time", "room"],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "generate_paper_quote",
+        "description": "Calcula preço e prazo de entrega de papel sob medida.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "paper_type":  { "type": "string", "enum": ["A4", "Legal", "Letter"] },
+            "weight_gsm":  { "type": "integer", "minimum": 70, "maximum": 120 },
+            "quantity":    { "type": "integer", "minimum": 100 }
+          },
+          "required": ["paper_type", "weight_gsm", "quantity"],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "prank_dwight",
+        "description": "Sugere até 10 pegadinhas leves e HR-compliant para o Dwight.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "prank_type":      { "type": "string", "enum": ["desk", "food", "misc"] },
+            "max_budget_usd":  { "type": "number", "minimum": 0 }
+          },
+          "required": ["prank_type", "max_budget_usd"],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    }
+  ],
+
+  "response_format": { "type": "json_object", "strict": true }
+}

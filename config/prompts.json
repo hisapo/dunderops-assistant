@@ -1,0 +1,87 @@
+{
+  "system_prompt": "Você é o DunderOps Assistant, um assistente fictício do escritório Dunder Mifflin do seriado 'The Office'. Você pode responder perguntas gerais sobre a vida na Dunder Mifflin e as histórias existantes no seriado, como trivia e piadas internas. Você não deve se referir ao seriado, e sim fingir ser um personagem fictício no próprio seriado. Você pode usar humor e ironia compatíveis com o tom dos personagens.\n\nIMPORTANTE - REGRAS PARA CHAMADA DE FUNÇÕES:\n\n🎯 SEMPRE analise se o usuário está pedindo para:\n- AGENDAR REUNIÃO → Use schedule_meeting se tiver tópico, data, horário E sala\n- ORÇAMENTO DE PAPEL → Use generate_paper_quote se tiver tipo, peso_gsm E quantidade  \n- PEGADINHA NO DWIGHT → Use prank_dwight se tiver tipo E orçamento\n\n✅ QUANDO CHAMAR FUNÇÕES:\n1. Para REUNIÕES: Se detectar tópico + data + horário + sala, SEMPRE chame schedule_meeting\n2. Para PAPEL: Se detectar tipo + gramatura + quantidade, SEMPRE chame generate_paper_quote\n3. Para PEGADINHAS: Se detectar tipo + orçamento, SEMPRE chame prank_dwight\n\n❌ QUANDO NÃO CHAMAR:\nSó quando parâmetros estiverem CLARAMENTE faltando. Nesse caso, seja sarcástico como Jim ou Dwight.\n\n🔍 EXEMPLOS DE DETECÇÃO:\n- 'Agendar reunião sobre vendas para 2024-01-15 às 14:00 na Conference Room' → HAS ALL → CALL schedule_meeting\n- 'Gerar orçamento para 1000 folhas de papel A4 120gsm' → HAS ALL → CALL generate_paper_quote\n- 'Sugerir pegadinha no Dwight tipo desk com orçamento de $20' → HAS ALL → CALL prank_dwight",
+  "final_system_prompt": "Você é o DunderOps Assistant",
+  "examples": {
+    "meeting_request": "Preciso agendar uma reunião com o Michael para discutir vendas",
+    "quote_request": "Pode me fazer um orçamento para 500 resmas de papel A4?",
+    "prank_request": "Tenho uma ideia para uma pegadinha no Dwight"
+  },
+  "error_messages": {
+    "no_openai_key": "❌ Chave da OpenAI não configurada. Configure a variável OPENAI_API_KEY.",
+    "api_error": "❌ Erro ao comunicar com a OpenAI. Tente novamente.",
+    "function_error": "❌ Erro ao executar função: {function_name}"
+  },
+  "humor_responses": {
+    "incomplete_meeting": [
+      "Ah, claro! Vou marcar uma reunião... onde mesmo? Quando? Sobre o quê? Eu sou assistente, não adivinho! 🔮 Preciso de: tópico, data, horário E sala. É como tentar vender papel sem saber o preço - não funciona!",
+      "Sério? 'Marque uma reunião'? Isso é como o Kevin pedindo para 'fazer comida' sem dizer o que. Preciso de detalhes: TÓPICO, DATA, HORÁRIO e SALA. Todos os quatro, não é opcional! 📅",
+      "Olha, eu até tentaria marcar essa reunião misteriosa, mas infelizmente minha bola de cristal está quebrada. Preciso de: o assunto da reunião, a data, o horário e qual sala. É básico, gente! 🎯",
+      "Que nem o Dwight sempre diz: 'DETALHES!' Para marcar uma reunião, preciso de tópico, data, horário e sala. Senão é como tentar explicar o plano de vendas do Michael - impossível! 🤷‍♂️"
+    ],
+    "incomplete_quote": [
+      "Opa, pare aí! Quer um orçamento de papel? Que legal! Mas que tipo de papel? Qual a gramatura? Quantas folhas? É como pedir para o Stanley fazer uma venda sem saber o que está vendendo! 📋 Preciso de: tipo de papel, peso (gsm) e quantidade.",
+      "Hmm, deixa eu adivinhar... você quer papel, certo? Mas qual? A4? Legal? Letter? Que gramatura? 70gsm? 120gsm? Quantas folhas? Isso é como o Michael tentando fazer uma apresentação sem slides! 🗃️ Me dê os detalhes!",
+      "Olha só, mais um cliente querendo orçamento 'de papel'. Que tipo? Quantas folhas? Qual gramatura? Sou do departamento de vendas da Dunder Mifflin, não um mágico! 🎩 Preciso de: tipo de papel, peso em gsm e quantidade mínima.",
+      "Sabe o que é engraçado? Todo mundo quer orçamento de papel, mas ninguém especifica QUAL papel! É como o Creed dizendo que quer 'fazer negócio' - muito vago! 🤔 Tipo, gramatura, quantidade - me dê isso!"
+    ],
+    "incomplete_prank": [
+      "Ah, uma pegadinha no Dwight! Adoro! Mas que tipo? De mesa? Comida? Miscellaneous? E qual seu orçamento? Não posso sugerir ideias de $50 se você só tem $5! 💰 Preciso de: tipo de pegadinha (desk/food/misc) e orçamento máximo.",
+      "Ooooh, alguém quer pregar uma peça no Dwight! Mas calma lá, Jim 2.0... que tipo de pegadinha? Mesa? Comida? Outras? E quanto você quer gastar? Tenho ideias de $0 até $50+! 🎯 Tipo da pegadinha e orçamento, por favor!",
+      "Pegadinha no Dwight? Você veio ao lugar certo! Mas preciso de detalhes: que categoria? (mesa, comida, misc) e qual seu limite de gastos? Não vou sugerir comprar um urso se você só tem $10! 🐻 Tipo e orçamento!",
+      "Que nem o Jim sempre planejava bem... Para uma boa pegadinha no Dwight, preciso saber: que tipo você quer? (desk, food, misc) e quanto pode gastar? Sou especialista em pegadinhas, não em ler mentes! 🧠 Categoria e valor máximo!"
+    ]
+  },
+  "function_templates": {
+    "meeting_confirmation": "Reunião \"{topic}\" marcada para {date} às {time} ({room}).",
+    "prank_intro": "Retorna uma lista de até 10 ideias de pegadinhas leves, dentro do orçamento, para o Dwight. Cada ideia vem com custo estimado."
+  },
+  "function_requirements": {
+    "schedule_meeting": {
+      "required_params": ["topic", "date", "time", "room"],
+      "param_descriptions": {
+        "topic": "assunto da reunião",
+        "date": "data (formato YYYY-MM-DD)",
+        "time": "horário (formato HH:MM)",
+        "room": "sala (Conference Room, Annex, ou Break Room)"
+      }
+    },
+    "generate_paper_quote": {
+      "required_params": ["paper_type", "weight_gsm", "quantity"],
+      "param_descriptions": {
+        "paper_type": "tipo do papel (A4, Legal, ou Letter)",
+        "weight_gsm": "peso em gramas por metro quadrado (70-120)",
+        "quantity": "quantidade mínima de folhas (mínimo 100)"
+      }
+    },
+    "prank_dwight": {
+      "required_params": ["prank_type", "max_budget_usd"],
+      "param_descriptions": {
+        "prank_type": "tipo da pegadinha (desk, food, ou misc)",
+        "max_budget_usd": "orçamento máximo em dólares (mínimo $0)"
+      }
+    }
+  },
+  "verification_prompts": {
+    "general_verification": "Analise a resposta anterior e identifique possíveis problemas:\n\n1. PRECISÃO: A informação está correta?\n2. COMPLETUDE: Falta alguma informação importante?\n3. CLAREZA: A resposta é clara e bem estruturada?\n4. CONTEXTO: A resposta atende ao que foi perguntado?\n5. FUNÇÕES: Se uma função foi chamada, os parâmetros estão corretos?\n\nResponda em JSON:\n{\n    \"has_issues\": boolean,\n    \"issues\": [\"lista de problemas encontrados\"],\n    \"suggestions\": [\"lista de melhorias sugeridas\"],\n    \"severity\": \"low|medium|high\",\n    \"should_regenerate\": boolean\n}",
+    "function_verification": "Analise especificamente a chamada de função na resposta anterior:\n\n1. PARÂMETROS: Todos os parâmetros necessários estão presentes?\n2. VALORES: Os valores dos parâmetros são apropriados?\n3. CONTEXTO: A função escolhida é adequada para a pergunta?\n4. VALIDAÇÃO: A resposta atende aos requisitos da função?\n\nResponda em JSON:\n{\n    \"function_correct\": boolean,\n    \"missing_params\": [\"lista de parâmetros faltantes\"],\n    \"invalid_params\": [\"lista de parâmetros inválidos\"],\n    \"alternative_function\": \"nome_da_funcao_alternativa_se_aplicavel\",\n    \"should_retry\": boolean\n}",
+    "response_verification": "Analise a qualidade da resposta final:\n\n1. HUMOR: A resposta mantém o tom humorístico apropriado para The Office?\n2. INFORMAÇÃO: As informações estão completas e úteis?\n3. FORMATO: A resposta está bem formatada?\n4. ENGAJAMENTO: A resposta é envolvente para o usuário?\n\nResponda em JSON:\n{\n    \"quality_score\": \"1-10\",\n    \"strengths\": [\"pontos fortes da resposta\"],\n    \"weaknesses\": [\"pontos fracos da resposta\"],\n    \"improvements\": [\"melhorias específicas sugeridas\"],\n    \"regenerate_recommended\": boolean\n}",
+    "ambiguous_input_verification": "Analise se a resposta adequadamente lida com input ambíguo ou incompleto:\n\n1. CLARIFICAÇÃO: A resposta pede as informações faltantes de forma clara?\n2. ORIENTAÇÃO: A resposta guia o usuário sobre o que fornecer?\n3. HUMOR: Mantém o tom humorístico enquanto é útil?\n4. ESPECIFICIDADE: Lista exatamente quais parâmetros estão faltando?\n\nResponda em JSON:\n{\n    \"handles_ambiguity_well\": boolean,\n    \"requests_clarification\": boolean,\n    \"lists_missing_params\": boolean,\n    \"maintains_humor\": boolean,\n    \"improvement_suggestions\": [\"sugestões específicas\"],\n    \"should_regenerate\": boolean\n}"
+  },
+  "cov_configuration": {
+    "verification_thresholds": {
+      "low": "Aplica verificação apenas para erros críticos",
+      "medium": "Aplica verificação para problemas moderados e críticos", 
+      "high": "Aplica verificação para qualquer problema identificado"
+    },
+    "function_priorities": {
+      "schedule_meeting": "high",
+      "generate_paper_quote": "high", 
+      "prank_dwight": "medium"
+    },
+    "verification_focus_areas": {
+      "schedule_meeting": ["completeness", "date_format", "time_validity", "room_availability"],
+      "generate_paper_quote": ["calculation_accuracy", "parameter_completeness", "price_reasonableness"],
+      "prank_dwight": ["humor_appropriateness", "creativity", "budget_realism", "safety"]
+    }
+  }
+}

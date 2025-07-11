@@ -1,0 +1,3 @@
+abstra==3.19.3
+openai>=1.0.0
+dataclasses; python_version<"3.7"

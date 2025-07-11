@@ -1,0 +1,146 @@
+{
+  "security_config": {
+    "max_input_length": 10000,
+    "max_json_depth": 10,
+    "allowed_json_keys": [
+      "user_input", "query", "text", "message", "content",
+      "topic", "date", "time", "room",
+      "paper_type", "weight_gsm", "quantity", 
+      "prank_type", "max_budget_usd"
+    ],
+    "blocked_domains": [
+      "javascript:", "data:", "vbscript:", "file:"
+    ]
+  },
+  
+  "input_schemas": {
+    "user_message": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "maxLength": 5000
+        },
+        "context": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      },
+      "required": ["message"],
+      "additionalProperties": false
+    },
+    
+    "function_params": {
+      "schedule_meeting": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9\\s\\-_áàâãéèêíïóôõöúçñü]{1,100}$",
+            "maxLength": 100
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "time": {
+            "type": "string", 
+            "pattern": "^\\d{2}:\\d{2}$"
+          },
+          "room": {
+            "type": "string",
+            "enum": ["Conference Room", "Annex", "Break Room"]
+          }
+        },
+        "required": ["topic", "date", "time", "room"],
+        "additionalProperties": false
+      },
+      
+      "generate_paper_quote": {
+        "type": "object",
+        "properties": {
+          "paper_type": {
+            "type": "string",
+            "enum": ["A4", "Legal", "Letter"]
+          },
+          "weight_gsm": {
+            "type": "integer",
+            "minimum": 70,
+            "maximum": 120
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 100,
+            "maximum": 1000000
+          }
+        },
+        "required": ["paper_type", "weight_gsm", "quantity"],
+        "additionalProperties": false
+      },
+      
+      "prank_dwight": {
+        "type": "object",
+        "properties": {
+          "prank_type": {
+            "type": "string",
+            "enum": ["desk", "food", "misc"]
+          },
+          "max_budget_usd": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000
+          }
+        },
+        "required": ["prank_type", "max_budget_usd"],
+        "additionalProperties": false
+      }
+    }
+  },
+  
+  "safety_patterns": {
+    "high_risk": [
+      "system\\s*:",
+      "assistant\\s*:",
+      "role\\s*:",
+      "ignore\\s+previous",
+      "forget\\s+instructions",
+      "jailbreak",
+      "dan\\s+mode"
+    ],
+    
+    "medium_risk": [
+      "pretend\\s+you\\s+are",
+      "act\\s+as\\s+if",
+      "imagine\\s+you",
+      "override\\s+safety",
+      "bypass\\s+filter"
+    ],
+    
+    "suspicious_content": [
+      "<script",
+      "javascript:",
+      "data:",
+      "\\\\x[0-9a-f]{2}",
+      "\\\\u[0-9a-f]{4}",
+      "eval\\s*\\(",
+      "Function\\s*\\(",
+      "__proto__",
+      "constructor\\s*\\."
+    ]
+  },
+  
+  "normalization_rules": {
+    "unicode_normalization": "NFKC",
+    "max_consecutive_newlines": 3,
+    "max_consecutive_spaces": 5,
+    "remove_control_chars": true,
+    "preserve_whitespace": ["\\n", "\\r", "\\t", " "]
+  },
+  
+  "content_limits": {
+    "max_words": 2000,
+    "max_sentences": 100,
+    "max_paragraphs": 50,
+    "min_printable_ratio": 0.8
+  }
+}
